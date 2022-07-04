@@ -4,38 +4,31 @@
  *
  * Return: Always 0 (Success/completed)
  */
+
 int main(void)
-
 {
-int number_left;
-int number_right;
+int c;
+int d = 0;
 
-
-for (number_left = 01; number_right <= 10; number_left++)
+while (d < 10)
 {
-for (number_right = number_left + 1 ; number_right <= 10; number_right++)
+c = 0;
+while (c < 10)
+if (d != c && d < c)
 {
-
-putchar(number_left);
-putchar (number_right);
-
-
-if ((number_left == 0) && (number_right == 1))
+putchar('0' + d);
+putchar('0' + c)
+if (c + d != 17)
 {
-break;
-}
-
 putchar(',');
-putchar (' ');
+putchar(' ');
 
 }
 
+c++;
 }
-
+d++;
+}
 putchar('\n');
-
-
-return (0);
-
-
+  return (0);
 }
