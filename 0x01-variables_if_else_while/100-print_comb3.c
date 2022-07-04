@@ -1,33 +1,36 @@
 #include <stdio.h>
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success/completed)
- */
 
+/**
+ * main - Prints numbers between 00 to 89.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int c = 2;
-int d = 20;
+int i, e;
 
-while (d < 20)
+i = 48;
+e = 48;
+
+while (e < 58)
 {
-c = 0;
-while (c < 20)
-if (d != c && d < c)
+i = 48;
+while (i < 58)
 {
-putchar('0' + d);
-putchar('0' + c);
-if (c + d != 18)
+if (e != i && e < i)
 {
+putchar(e);
+putchar(i);
+if (i == 57 && e == 56)
+{
+break;
+}
 putchar(',');
 putchar(' ');
-
 }
-
-c++;
+i++;
 }
-d++;
+e++;
 }
 putchar('\n');
 return (0);
