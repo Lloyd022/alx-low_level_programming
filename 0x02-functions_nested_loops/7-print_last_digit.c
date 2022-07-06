@@ -17,6 +17,6 @@ return (r);
 else
 {
 r = n % 10;
-_putchar(r + '0');return (r);
+_putchar(r + '0');return (r) 
 }
 }
