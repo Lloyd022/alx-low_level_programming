@@ -1,24 +1,32 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- *  * main - Entry point.
- *   *
- *    * Return: Always 0.
+ *  * print_number - prints an integer.
+ *   * @n: input integer.
+ *    * Return: no return.
  *     */
-
-int main(void)
-
+void print_number(int n)
 {
-	long n, i;
+unsigned int m, d, count;
 
-	n = 612852475143;
-	for (i = 2; i < n; i++)
-	{
-		while (n % i == 0)
-			n = n / i;
-	}
+if (n < 0)
+					{
+_putchar(45);
+m = n * -1;}
+else
+{
+m = n;
+}
 
-	printf("%lu\n", n);
+d = m;
+count = 1;
+while (d > 9)
+{
+d /= 10;
+count *= 10;
+}
 
-	return (0);
+for (; count >= 1; count /= 10)
+																				_putchar(((m / count) % 10) + 48);
+}
 }
