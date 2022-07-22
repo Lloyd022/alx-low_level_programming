@@ -13,11 +13,11 @@ return (1 + length(s + 1));
 return (0);
 }
 /**
- *  * checker - helper function
- *   * @s: string
- *    * @x: num
- *     * Return: output
- *      */
+ * checker - helper function
+ * @s: string
+ * @x: num
+ * Return: output
+ */
 int checker(char *s, int x)
 {
 if (x <= 0)
