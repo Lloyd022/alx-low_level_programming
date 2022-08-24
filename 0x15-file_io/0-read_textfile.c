@@ -7,10 +7,10 @@
 *     *
 *      * Return: numbers of letters printed. It fails, returns 0.
 */
-size_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 int fd;
-size_t nrd, nwr;
+ssize_t nrd, nwr;
 char *buf;
 
 if (!filename)
